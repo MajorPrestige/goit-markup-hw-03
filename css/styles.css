@@ -64,10 +64,10 @@ body {
 .current {
    color: var(--accent-color);
 }
-.banner {
+.hero {
    background-color: var(--second-theme-color);
 }
-.banner-title {
+.hero-title {
    font-weight: 900;
    font-size: 44px;
    line-height: 1.36;
@@ -76,7 +76,7 @@ body {
    text-transform: uppercase;
    color: var(--main-color);
 }
-.banner-button {
+.hero-button {
    background-color: var(--accent-color);
    font-weight: 700;
    font-size: 16px;
@@ -87,6 +87,10 @@ body {
    letter-spacing: 0.06em;
    cursor: pointer;
    color: var(--main-color);
+}
+.hero-button:focus,
+.hero-button:hover {
+   background-color: #188CE8;
 }
 .hide {
    font-size: 0;
