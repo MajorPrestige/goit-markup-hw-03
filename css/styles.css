@@ -49,23 +49,26 @@ h1, h2, h3, h4, h5, h6, p, ul {
    padding-left: 15px;
    padding-right: 15px;
 }
+.section {
+   padding-top: 94px;
+   padding-bottom: 94px;
+}
 
 /** HEADER */
 
 .nav-bar {
    display: flex;
+   margin-left: auto;
 }
 .header-flex {
    display: flex;
    align-items: center;
-   justify-content: space-between;
 }
 /*! 2 способа запомнить  */
 /* .nav-item:not(:first-child) {
    outline: 1px solid navy;
    margin-left: 50px;
 } */
-
 .nav-item + .nav-item {
    margin-left: 50px; 
 }
@@ -106,10 +109,20 @@ h1, h2, h3, h4, h5, h6, p, ul {
 .current {
    color: var(--accent-color);
 }
+
+/* * HERO SECTION */
+
 .hero {
    background-color: var(--second-theme-color);
 }
+.hero .section {
+   width: 1600px;
+   margin-left: auto;
+   margin-right: auto;
+}
 .hero-title {
+   margin-top: 200px;
+
    font-weight: 900;
    font-size: 44px;
    line-height: 1.36;
@@ -119,6 +132,11 @@ h1, h2, h3, h4, h5, h6, p, ul {
    color: var(--main-color);
 }
 .hero-button {
+   margin: 30px auto 200px;
+   padding: 10px 32px;
+   border: 0px;
+   border-radius: 4px;
+
    background-color: var(--accent-color);
    font-weight: 700;
    font-size: 16px;
@@ -134,10 +152,25 @@ h1, h2, h3, h4, h5, h6, p, ul {
 .hero-button:hover {
    background-color: #188CE8;
 }
+
+/* * FEATURES SECTION */
+
+.features {
+   display: flex;
+   margin-top: 94px;
+   margin-bottom: 94px;
+}
+.features-item {
+   width: 270px;
+}
+.features-item + .features-item {
+   margin-left: 30px;
+}
 .hide {
    font-size: 0;
 }
 .features-title {
+   margin-bottom: 10px;
    font-weight: 700;
    line-height: 1.14;
    text-transform: uppercase;
@@ -146,21 +179,58 @@ h1, h2, h3, h4, h5, h6, p, ul {
 .features-text {
    font-weight: 400;
    line-height: 1.71;
+   text-align: left;
+   vertical-align: top;
    color: var(--second-text-color);
 }
+
+/* * WORKS SECTION */
+
+.works {
+   margin-top: 50px;
+   display: flex;
+}
+.works-item + .works-item {
+   margin-left: 30px;
+}
+
+/* * WORKERS SECTION */
+
 .worker {
    background-color: var(--theme-color);
 }
+.worker-list {
+   display: flex;
+}
+.worker-title {
+   padding-top: 94px;
+   margin-top: 94px;
+   margin-bottom: 50px;
+}
 .worker-card {
+   width: 270px;
+   margin-bottom: 94px;
+   border-radius: 4px;
+   
    background-color: var(--main-color);
    font-size: 16px;
    line-height: 1.19;
 }
+.worker-card+.worker-card {
+   margin-left: 30px;
+}
 .worker-name {
+   margin-top: 30px;
+   margin-bottom: 10px;
+
    font-weight: 500;
    font-size: 16px;
+   text-align: center;
 }
 .worker-position {
+   margin-bottom: 30px;
+
+   text-align: center;
    font-weight: 400;
    color: var(--second-text-color);
 }
