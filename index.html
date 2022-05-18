@@ -22,7 +22,7 @@
    </head>
    <body>
       <!-- head of title -->
-      <header>
+      <header class="header">
          <div class="container header-flex">
             <!-- navigations -->
             <nav class="header-flex">
@@ -55,16 +55,16 @@
       <main>
          <!-- hero -->
          <section class="hero">
-            <div class="section">
+            <div class="container">
                <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
                <button class="hero-button" type="button">Заказать услугу</button>
             </div>
          </section>
          <!-- features -->
-         <section>
-            <!--? hide h2 -->
-            <h2 class="hide">Преимущества</h2>
+         <section class="section">
             <div class="container">
+               <!--? hide h2 -->
+               <h2 class="hide">Преимущества</h2>
                <ul class="list features">
                   <li class="features-item">
                      <h3 class="features-title">Внимание к деталям</h3>
@@ -99,7 +99,7 @@
          <!-- works -->
          <section>
             <div class="container">
-               <h2 class="section-title">Чем мы занимаемся</h2>
+               <h2 class="section-title works-title">Чем мы занимаемся</h2>
                <ul class="list works">
                   <li class="works-item">
                      <img src="./images/img-1.jpg" width="370" height="294" alt="разработка ПО" />
@@ -124,7 +124,7 @@
             </div>
          </section>
          <!-- workers -->
-         <section class="worker">
+         <section class="section worker">
             <div class="container">
                <h2 class="section-title worker-title">Наша команда</h2>
                <ul class="list worker-list">
@@ -135,8 +135,10 @@
                         src="./images/img-4.jpg"
                         alt="фото первого члена команды"
                      />
-                     <h3 class="worker-name">Игорь Демьяненко</h3>
-                     <p class="worker-position">Product Designer</p>
+                     <div class="card">
+                        <h3 class="worker-name">Игорь Демьяненко</h3>
+                        <p class="worker-position">Product Designer</p>
+                     </div>
                   </li>
                   <li class="worker-card">
                      <img
@@ -145,8 +147,10 @@
                         src="./images/img-5.jpg"
                         alt="фото второго члена команды"
                      />
-                     <h3 class="worker-name">Ольга Репина</h3>
-                     <p class="worker-position">Frontend Developer</p>
+                     <div class="card">
+                        <h3 class="worker-name">Ольга Репина</h3>
+                        <p class="worker-position">Frontend Developer</p>
+                     </div>
                   </li>
                   <li class="worker-card">
                      <img
@@ -155,8 +159,10 @@
                         src="./images/img-6.jpg"
                         alt="фото третьего члена команды"
                      />
-                     <h3 class="worker-name">Николай Тарасов</h3>
-                     <p class="worker-position">Marketing</p>
+                     <div class="card">
+                        <h3 class="worker-name">Николай Тарасов</h3>
+                        <p class="worker-position">Marketing</p>
+                     </div>
                   </li>
                   <li class="worker-card">
                      <img
@@ -165,8 +171,10 @@
                         src="./images/img-7.jpg"
                         alt="фото четвертого члена команды"
                      />
-                     <h3 class="worker-name">Михаил Ермаков</h3>
-                     <p class="worker-position">UI Designer</p>
+                     <div class="card">
+                        <h3 class="worker-name">Михаил Ермаков</h3>
+                        <p class="worker-position">UI Designer</p>
+                     </div>
                   </li>
                </ul>
             </div>

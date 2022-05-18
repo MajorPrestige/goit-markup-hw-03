@@ -24,6 +24,9 @@ h1, h2, h3, h4, h5, h6, p, ul {
    margin: 0;
    padding: 0;
 }
+img {
+   display: block;
+}
 
 /** Utility class */
 
@@ -128,14 +131,12 @@ h1, h2, h3, h4, h5, h6, p, ul {
 .hero {
    background-color: var(--second-theme-color);
 }
-.hero .section {
+.hero .container {
+   padding-top: 200px;
+   padding-bottom: 200px;
    max-width: 700px;
-   margin-left: auto;
-   margin-right: auto;
 }
 .hero-title {
-   margin-top: 200px;
-
    font-weight: 900;
    font-size: 44px;
    line-height: 1.36;
@@ -145,7 +146,9 @@ h1, h2, h3, h4, h5, h6, p, ul {
    color: var(--main-color);
 }
 .hero-button {
-   margin: 30px auto 200px;
+   margin-top: 30px;
+   margin-left: auto;
+   margin-right: auto;
    padding: 10px 32px;
    border: none;
    border-radius: 4px;
@@ -170,8 +173,6 @@ h1, h2, h3, h4, h5, h6, p, ul {
 
 .features {
    display: flex;
-   margin-top: 94px;
-   margin-bottom: 94px;
 }
 .features-item {
    width: 270px;
@@ -197,8 +198,11 @@ h1, h2, h3, h4, h5, h6, p, ul {
 /* * WORKS SECTION */
 
 .works {
-   margin-top: 50px;
    display: flex;
+   padding-bottom: 94px;
+}
+.works-title {
+   margin-bottom: 50px;
 }
 .works-item + .works-item {
    margin-left: 30px;
@@ -212,15 +216,17 @@ h1, h2, h3, h4, h5, h6, p, ul {
 .worker-list {
    display: flex;
 }
+.card {
+   padding-top: 30px;
+   padding-bottom: 30px;
+   padding-left: auto;
+   padding-right: auto;
+}
 .worker-title {
-   padding-top: 94px;
-   margin-top: 94px;
    margin-bottom: 50px;
 }
 .worker-card {
    width: 270px;
-   margin-bottom: 94px;
-   border: 10px;
    border-radius: 4px;
    
    background-color: var(--main-color);
@@ -231,7 +237,6 @@ h1, h2, h3, h4, h5, h6, p, ul {
    margin-left: 30px;
 }
 .worker-name {
-   margin-top: 30px;
    margin-bottom: 10px;
 
    font-weight: 500;
@@ -239,8 +244,6 @@ h1, h2, h3, h4, h5, h6, p, ul {
    text-align: center;
 }
 .worker-position {
-   margin-bottom: 30px;
-
    text-align: center;
    font-weight: 400;
    color: var(--second-text-color);
@@ -287,9 +290,12 @@ h1, h2, h3, h4, h5, h6, p, ul {
 .project-card:nth-last-child(-n+3) {
    margin: 0;
 }
+.card-container {
+   padding: 24px 20px;
+}
 .project-title {
-   margin: 20px 24px 4px;
-   max-width: 322px;
+   margin-bottom: 4px;
+
    text-align: left;
    font-weight: 700;
    font-size: 18px;
@@ -297,24 +303,25 @@ h1, h2, h3, h4, h5, h6, p, ul {
    letter-spacing: 0.06em;
 }
 .project-text {
-   margin: 4px 24px 20px;
-   max-width: 322px;
    text-align: left;
    font-weight: 400;
    font-size: 16px;
    line-height: 1.88;
    color: var(--second-text-color);
 }
+
+/* * FOOTER CONTENT * */
+
 .footer {
    background-color: var(--second-theme-color);
+   padding-top: 60px;
+   padding-bottom: 60px;
 }
 .footer .logo {
-   padding-top: 60px;
-   padding-bottom: 20px;
+   padding: 0;
+   margin-bottom: 20px;
 }
 .address {
-   margin-top: 0;
-   padding-bottom: 60px;
 }
 .address-item + .address-item {
    margin-top: 9px;
